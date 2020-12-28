@@ -1,0 +1,709 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*..........Repeated CSS Style........ */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+
+/*.........Main CSS Style Starts...........*/
+
+/*.........Header Section css start..........*/
+.site-header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0% 75%, 0 0);
+    position: relative;
+}
+
+.site-header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /*background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);*/
+    background: linear-gradient(90deg, rgba(114,138,143,1) 0%, rgba(47,204,208,1) 100%);
+}
+
+.nav-item a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.section-banner {
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.banner-content {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.banner-content p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+
+.banner-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.banner-buttons a:hover {
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*.........Header Section css end..........*/
+
+/*.........Our Features CSS Start...........*/
+.our-features-row {
+    width: 100%;
+    height: auto;
+    margin: 6.25rem 0;
+    /*100px*/
+}
+
+.our-features-col {
+    background: #fff;
+    border: medium none;
+    padding: 3.125rem;
+    /*50px*/
+    border-radius: 0.1875rem;
+    /*3px*/
+    transition: 0.3s;
+}
+
+.our-features-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+/*.........Our Features CSS end...........*/
+/*..........Our Offer CSS Start............*/
+.section-our-offer {
+    background: #f7f7f9;
+    padding: 3.125rem 0;
+    /*50px*/
+    margin-bottom: 3.125rem;
+    /*50px*/
+}
+
+.our-offer-title {
+    margin-bottom: 3.125rem;
+    /*50px*/
+}
+
+.our-offer-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.offer-progress-bar h2 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.progress {
+    height: 0.6rem;
+    margin-bottom: 1.5625rem;
+    /*25px*/
+}
+
+.offer-icon-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2fccd0;
+}
+
+/*..........Our Offer CSS End............*/
+/*..........Project Work CSS Start........*/
+.project-work {
+    margin: 6.25rem 0 4.6875rem;
+    /*100px  75px*/
+}
+
+.project-work-heading {
+    padding-bottom: 50px;
+}
+
+.project-work-content h2 {
+    font-size: 2rem;
+}
+
+/*..........Project Work CSS End........*/
+/*...........Pricing CSS Start..........*/
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+}
+
+.pricing-title {
+    padding-bottom: 50px;
+}
+
+.pricing-content-row :nth-child(1) {
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .price {
+    color: #50d1c0;
+}
+
+.card-active {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff;
+    padding: 1.5625rem 0;
+    /*25px*/
+}
+
+.card-body {
+    padding: 30px 0;
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.card-footer a {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card:hover .card-footer a {
+    background: #50d1c0;
+    color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*...........Pricing CSS End..........*/
+/*...........Section Feedback CSS start..........*/
+.section-feedback {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.feedback-title p {
+    padding-bottom: 30px;
+}
+
+.slider-content {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.slider-content:hover {
+    background: #16c9f6;
+}
+
+.slider-content:hover p {
+    color: #fff;
+}
+
+.slider-content a {
+    position: relative;
+}
+
+.slider-content a:after {
+    content: '\f10d';
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    background: #16c9f6;
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.slider-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.slider-content h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+}
+
+.carousel-indicators li {
+    background-color: #16c9f6;
+}
+
+/*...........Section Feedback CSS End..........*/
+/*...........Section Contactus CSS start...........*/
+.section-contactus {
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+    position: relative;
+}
+
+.section-contactus:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+}
+
+.contactus-title {
+    margin-bottom: 40px;
+}
+
+.contactus-form-btn button {
+    border: 1px solid #16c9f6;
+    border-radius: 100px;
+    margin-top: 15px;
+    padding: 12px 35px;
+    outline: none;
+    color: #16c9f6;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;
+}
+
+.contactus-form:hover button {
+    border: 1px solid #16c9f6;
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+    font-size: 0.79rem;
+    color: #606060;
+}
+
+/*...........Section Contactus CSS End.............*/
+/*...........Section Subscribe CSS Start.............*/
+.section-subscribe {
+    width: 100%;
+    height: auto;
+    margin: 100px auto;
+}
+
+.subscribe-title h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.subscribe-input {
+    border-radius: 100px 0px 0px 100px;
+    min-width: 150px;
+}
+
+.input-group-text {
+    color: #fff;
+    background: #5bc0de;
+    border-radius: 0 100px 100px 0;
+    min-width: 130px;
+    padding-left: 25px;
+}
+
+/*...........Section Subscribe CSS End.............*/
+
+/*.........Main Section css end..........*/
+
+/*..........Section Footer Start............*/
+.section-footer {
+    width: 100%;
+    height: auto;
+    padding: 80px 0 25px 0;
+    background: #00abff;
+    position: relative;
+}
+
+.footer-content {
+    margin-bottom: 25px;
+}
+
+.footer-content h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+    color: #fff;
+    font-size: 0.8125rem;
+    /*13px*/
+}
+
+.navigation-link li:hover {
+    transition: 0.3s ease;
+    transform: translateY(-3px);
+    text-decoration: underline;
+}
+
+.navigation-link a {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+.scroll-top {
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: none;
+    border: none;
+    border-radius: 10px;
+    background: #00abff;
+    z-index: 99;
+  }
+  .scroll-top:hover{
+    background: #606060;
+  }
+  .scroll-top i {
+    display: inline-block;
+    color: #fff;
+  }
+/*..........Section Footer End............*/
+
+/*...........media queries.................*/
+
+@media(min-width:768px) and (max-width:991px) {
+    .nav-item{
+        text-align: center;
+    }
+    .pricing {
+        height: auto;
+    }
+    .pricing-content-row{
+        padding: 0 60px;
+    }
+    .section-contactus{
+        height: auto;
+    }
+    .contactus-form-btn button{
+        background: #fff;
+        padding: 7px 25px;
+    }
+    ::placeholder {
+        font-size: 11px;
+    }
+}
+
+@media(min-width:575px) and (max-width:767px) {
+    .nav-item{
+        text-align: center;
+    }
+    /*
+    .banner-content{
+        padding-top: 80px;
+    }
+    */
+    .pricing {
+        height: auto;
+    }
+    .pricing-content-row{
+        padding: 0 60px;
+    }
+    .section-feedback{
+        height: auto;
+    }
+    .carousel{
+        padding: 0 30px;
+    }
+    .slider-content{
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .section-contactus{
+        height: auto;
+    }
+    .contactus-form-btn button{
+        background: #fff;
+        padding: 7px 25px;
+    }
+    ::placeholder {
+        font-size: 11px;
+    }
+    .section-footer{
+        padding: 25px 50px;
+    }
+}
+
+@media(min-width:480px) and (max-width:574px) {
+    .nav-item{
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 30px;
+    }
+    .banner-content p{
+        font-size: 20px;
+    }
+    .banner-buttons a{
+        padding: 7px 20px;
+        font-size: 13px;
+    }
+    .our-features-row{
+        padding: 0 80px;
+    }
+    .pricing {
+        height: auto;
+    }
+    .pricing-content-row{
+        padding: 0 60px;
+    }
+    .section-feedback{
+        height: auto;
+    }
+    .carousel{
+        padding: 0 60px;
+    }
+    .slider-content{
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .section-contactus{
+        height: auto;
+    }
+    .contactus-form-btn button{
+        background: #fff;
+        padding: 7px 25px;
+    }
+    ::placeholder {
+        font-size: 11px;
+    }
+    .subscribe-title h2 {
+        font-size: 22px;
+    }
+    .section-subscribe-row{
+        padding: 0 50px;
+    }
+    .section-footer{
+        padding: 25px 50px;
+    }
+}
+
+@media(max-width:479px) {
+    .banner-content h1{
+        font-size: 25px;
+    }
+    .banner-content p{
+        font-size: 15px;
+    }
+    
+    .nav-item{
+        text-align: center;
+    }
+    .banner-buttons a{
+        padding: 7px 20px;
+        font-size: 13px;
+    }
+    /*.our-features-row{
+        padding: 0 20px;
+    }*/
+    .project-item h2{
+        font-size: 20px;
+    }
+    .project-item p{
+        font-size: 10px;
+    }
+    .pricing {
+        height: auto;
+    }
+    .section-feedback{
+        height: auto;
+    }
+    .feedback-title h2{
+        font-size: 25px;
+    }
+    /*.carousel{
+        padding: 0 60px;
+    }*/
+    .slider-content{
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .section-contactus{
+        height: auto;
+    }
+    .contactus-title h2{
+        font-size: 25px;
+    }
+    .contactus-title p{
+        font-size: 11px;
+    }
+    .contactus-form-btn button{
+        background: #fff;
+        padding: 7px 25px;
+    }
+    ::placeholder {
+        font-size: 10px;
+    }
+    .subscribe-title h2 {
+        font-size: 20px;
+        padding: 0 1px;
+    }
+    .section-subscribe-row{
+        padding: 0 20px;
+    }
+    .section-footer{
+        padding: 25px;
+    }
+    .copyright p{
+        padding-bottom: 10px;
+    }
+}
